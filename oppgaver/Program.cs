@@ -51,3 +51,20 @@ string Concat(string s, string y)
 }
 var reslt = Concat("hello", "hello2");
 Console.WriteLine(reslt);
+//finn bob
+var bob = "bobob";
+var count = 0;
+for(int i= 0; i<bob.Length; i++)
+{
+    try
+    {
+        if (bob.Substring(i, 3).Contains("bob"))
+        {
+            count++;
+            i++;
+        }
+    }
+    catch(Exception) { }
+    
+}
+Console.WriteLine(count);
